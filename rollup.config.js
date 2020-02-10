@@ -23,5 +23,21 @@ export default [
       babel(),
       isProduction() ? terser() : undefined
     ]
+  },
+  {
+    output: {
+      dir: path.join('dist', 'umd'),
+      format: 'umd',
+      name: 'x-pwgen-components'
+    },
+    input: ['src/x-pwgen-components/index.js'],
+    plugins: [
+      replace({
+        'process.env.NODE_ENV': isProduction() ? JSON.stringify('production') : JSON.stringify('development')
+      }),
+      resolve(),
+      babel(),
+      isProduction() ? terser() : undefined
+    ]
   }
 ]
