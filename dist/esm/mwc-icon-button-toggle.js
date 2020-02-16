@@ -1,4 +1,4 @@
-import{_ as t,a as o,b as e,q as n,p as s,h as i,e as a}from"./lit-element-19997f04.js";import"./events-f75eae9d.js";import{M as r}from"./foundation-0388ced5.js";import{r as c}from"./ripple-directive-86a29aa3.js";import{o as l,B as d,a as u}from"./base-element-4666bd1d.js";import{s as p}from"./mwc-icon-button-css-563e3777.js";
+import{_ as t,a as o,b as e,q as n,p as s,h as i,e as a}from"./lit-element-e8bb647f.js";import"./events-ef82cec7.js";import{M as c}from"./foundation-0388ced5.js";import{a as r}from"./ripple-directive-935444f9.js";import{o as l,B as d,a as u}from"./base-element-991ab497.js";import{s as p}from"./mwc-icon-button-css-bb28244c.js";
 /**
  * @license
  * Copyright 2018 Google Inc.
@@ -20,7 +20,7 @@ import{_ as t,a as o,b as e,q as n,p as s,h as i,e as a}from"./lit-element-19997
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- */var f={ICON_BUTTON_ON:"mdc-icon-button--on",ROOT:"mdc-icon-button"},h={ARIA_PRESSED:"aria-pressed",CHANGE_EVENT:"MDCIconButtonToggle:change"},m=function(e){function n(t){return e.call(this,o({},n.defaultAdapter,t))||this}return t(n,e),Object.defineProperty(n,"cssClasses",{get:function(){return f},enumerable:!0,configurable:!0}),Object.defineProperty(n,"strings",{get:function(){return h},enumerable:!0,configurable:!0}),Object.defineProperty(n,"defaultAdapter",{get:function(){return{addClass:function(){},hasClass:function(){return!1},notifyChange:function(){},removeClass:function(){},setAttr:function(){}}},enumerable:!0,configurable:!0}),n.prototype.init=function(){this.adapter_.setAttr(h.ARIA_PRESSED,""+this.isOn())},n.prototype.handleClick=function(){this.toggle(),this.adapter_.notifyChange({isOn:this.isOn()})},n.prototype.isOn=function(){return this.adapter_.hasClass(f.ICON_BUTTON_ON)},n.prototype.toggle=function(t){void 0===t&&(t=!this.isOn()),t?this.adapter_.addClass(f.ICON_BUTTON_ON):this.adapter_.removeClass(f.ICON_BUTTON_ON),this.adapter_.setAttr(h.ARIA_PRESSED,""+t)},n}(r);
+ */var f={ICON_BUTTON_ON:"mdc-icon-button--on",ROOT:"mdc-icon-button"},h={ARIA_PRESSED:"aria-pressed",CHANGE_EVENT:"MDCIconButtonToggle:change"},b=function(e){function n(t){return e.call(this,o({},n.defaultAdapter,t))||this}return t(n,e),Object.defineProperty(n,"cssClasses",{get:function(){return f},enumerable:!0,configurable:!0}),Object.defineProperty(n,"strings",{get:function(){return h},enumerable:!0,configurable:!0}),Object.defineProperty(n,"defaultAdapter",{get:function(){return{addClass:function(){},hasClass:function(){return!1},notifyChange:function(){},removeClass:function(){},setAttr:function(){}}},enumerable:!0,configurable:!0}),n.prototype.init=function(){this.adapter_.setAttr(h.ARIA_PRESSED,""+this.isOn())},n.prototype.handleClick=function(){this.toggle(),this.adapter_.notifyChange({isOn:this.isOn()})},n.prototype.isOn=function(){return this.adapter_.hasClass(f.ICON_BUTTON_ON)},n.prototype.toggle=function(t){void 0===t&&(t=!this.isOn()),t?this.adapter_.addClass(f.ICON_BUTTON_ON):this.adapter_.removeClass(f.ICON_BUTTON_ON),this.adapter_.setAttr(h.ARIA_PRESSED,""+t)},n}(c);
 /**
 @license
 Copyright 2019 Google Inc. All Rights Reserved.
@@ -37,9 +37,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-class b extends d{constructor(){super(...arguments),this.mdcFoundationClass=m,this.label="",this.disabled=!1,this.onIcon="",this.offIcon="",this.on=!1}createAdapter(){return Object.assign(Object.assign({},u(this.mdcRoot)),{setAttr:(t,o)=>{this.mdcRoot.setAttribute(t,o)},notifyChange:t=>{this.dispatchEvent(new CustomEvent("MDCIconButtonToggle:change",{detail:t,bubbles:!0}))}})}handleClick(){this.on=!this.on,this.mdcFoundation.handleClick()}focus(){this.mdcRoot.focus()}render(){return i`
+class m extends d{constructor(){super(...arguments),this.mdcFoundationClass=b,this.label="",this.disabled=!1,this.onIcon="",this.offIcon="",this.on=!1}createAdapter(){return Object.assign(Object.assign({},u(this.mdcRoot)),{setAttr:(t,o)=>{this.mdcRoot.setAttribute(t,o)},notifyChange:t=>{this.dispatchEvent(new CustomEvent("MDCIconButtonToggle:change",{detail:t,bubbles:!0}))}})}handleClick(){this.on=!this.on,this.mdcFoundation.handleClick()}focus(){this.mdcRoot.focus()}render(){return i`
       <button
-        .ripple="${c()}"
+        .ripple="${r()}"
         class="mdc-icon-button"
         @click="${this.handleClick}"
         aria-hidden="true"
@@ -55,7 +55,7 @@ class b extends d{constructor(){super(...arguments),this.mdcFoundationClass=m,th
             <i class="material-icons">${this.onIcon}</i>
           </slot>
         </span>
-      </button>`}}e([n(".mdc-icon-button")],b.prototype,"mdcRoot",void 0),e([s({type:String})],b.prototype,"label",void 0),e([s({type:Boolean,reflect:!0})],b.prototype,"disabled",void 0),e([s({type:String})],b.prototype,"onIcon",void 0),e([s({type:String})],b.prototype,"offIcon",void 0),e([s({type:Boolean,reflect:!0}),l((function(t){this.mdcFoundation.toggle(t)}))],b.prototype,"on",void 0);
+      </button>`}}e([n(".mdc-icon-button")],m.prototype,"mdcRoot",void 0),e([s({type:String})],m.prototype,"label",void 0),e([s({type:Boolean,reflect:!0})],m.prototype,"disabled",void 0),e([s({type:String})],m.prototype,"onIcon",void 0),e([s({type:String})],m.prototype,"offIcon",void 0),e([s({type:Boolean,reflect:!0}),l((function(t){this.mdcFoundation.toggle(t)}))],m.prototype,"on",void 0);
 /**
 @license
 Copyright 2019 Google Inc. All Rights Reserved.
@@ -72,4 +72,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-let g=class extends b{};g.styles=p,g=e([a("mwc-icon-button-toggle")],g);export{g as IconButtonToggle};
+let g=class extends m{};g.styles=p,g=e([a("mwc-icon-button-toggle")],g);export{g as IconButtonToggle};

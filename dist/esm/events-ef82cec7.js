@@ -20,4 +20,4 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-var t;function e(e,i){if(void 0===e&&(e=window),void 0===i&&(i=!1),void 0===t||i){var n=!1;try{e.document.addEventListener("test",(function(){}),{get passive(){return n=!0}})}catch(t){}t=n}return!!t&&{passive:!0}}export{e as a};
+function t(t){return void 0===t&&(t=window),!!function(t){void 0===t&&(t=window);var e=!1;try{var n={get passive(){return e=!0,!1}},r=function(){};t.document.addEventListener("test",r,n),t.document.removeEventListener("test",r,n)}catch(t){e=!1}return e}(t)&&{passive:!0}}export{t as a};

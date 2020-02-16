@@ -1,4 +1,4 @@
-import{B as e}from"./base-element-4666bd1d.js";
+import{c as t,L as e,h as n,b as o,e as i}from"./lit-element-e8bb647f.js";
 /**
 @license
 Copyright 2018 Google Inc. All Rights Reserved.
@@ -14,4 +14,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-*/class t extends e{createRenderRoot(){return this.attachShadow({mode:"open",delegatesFocus:!0})}click(){this.formElement&&(this.formElement.focus(),this.formElement.click())}setAriaLabel(e){this.formElement&&this.formElement.setAttribute("aria-label",e)}firstUpdated(){super.firstUpdated(),this.mdcRoot.addEventListener("change",e=>{this.dispatchEvent(new Event("change",e))})}}export{t as F};
+*/const s=t`:host{font-family:var(--mdc-icon-font, "Material Icons");font-weight:normal;font-style:normal;font-size:var(--mdc-icon-size, 24px);line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;font-feature-settings:"liga"}`;let a=class extends e{render(){return n`<slot></slot>`}};a.styles=s,a=o([i("mwc-icon")],a);export{a as I};

@@ -1,4 +1,4 @@
-import{_ as s,b as e,e as t}from"./lit-element-19997f04.js";import"./foundation-0388ced5.js";import"./class-map-f135b7cf.js";import"./base-element-4666bd1d.js";import{c as r,M as a,T as l,p as o,s as i}from"./mwc-top-app-bar-base-f17defb1.js";
+import{_ as s,b as e,e as t}from"./lit-element-e8bb647f.js";import"./foundation-0388ced5.js";import"./class-map-f61bcc55.js";import"./base-element-991ab497.js";import{c as r,M as a,T as l,p as o,s as i}from"./mwc-top-app-bar-base-f10f3f61.js";
 /**
  * @license
  * Copyright 2018 Google Inc.
@@ -20,7 +20,7 @@ import{_ as s,b as e,e as t}from"./lit-element-19997f04.js";import"./foundation-
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- */var n=function(e){function t(){var s=null!==e&&e.apply(this,arguments)||this;return s.wasScrolled_=!1,s}return s(t,e),t.prototype.handleTargetScroll=function(){this.adapter_.getViewportScrollY()<=0?this.wasScrolled_&&(this.adapter_.removeClass(r.FIXED_SCROLLED_CLASS),this.wasScrolled_=!1):this.wasScrolled_||(this.adapter_.addClass(r.FIXED_SCROLLED_CLASS),this.wasScrolled_=!0)},t}(a);
+ */var c=function(e){function t(){var s=null!==e&&e.apply(this,arguments)||this;return s.wasScrolled_=!1,s}return s(t,e),t.prototype.handleTargetScroll=function(){this.adapter_.getViewportScrollY()<=0?this.wasScrolled_&&(this.adapter_.removeClass(r.FIXED_SCROLLED_CLASS),this.wasScrolled_=!1):this.wasScrolled_||(this.adapter_.addClass(r.FIXED_SCROLLED_CLASS),this.wasScrolled_=!0)},t}(a);
 /**
 @license
 Copyright 2019 Google Inc. All Rights Reserved.
@@ -36,4 +36,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-*/class c extends l{constructor(){super(...arguments),this.mdcFoundationClass=n}barClasses(){return Object.assign(Object.assign({},super.barClasses()),{"mdc-top-app-bar--fixed":!0})}registerListeners(){this.scrollTarget.addEventListener("scroll",this.handleTargetScroll,o)}unregisterListeners(){this.scrollTarget.removeEventListener("scroll",this.handleTargetScroll)}}let d=class extends c{};d.styles=i,d=e([t("mwc-top-app-bar-fixed")],d);export{d as TopAppBarFixed};
+*/class n extends l{constructor(){super(...arguments),this.mdcFoundationClass=c}barClasses(){return Object.assign(Object.assign({},super.barClasses()),{"mdc-top-app-bar--fixed":!0})}registerListeners(){this.scrollTarget.addEventListener("scroll",this.handleTargetScroll,o)}unregisterListeners(){this.scrollTarget.removeEventListener("scroll",this.handleTargetScroll)}}let p=class extends n{};p.styles=i,p=e([t("mwc-top-app-bar-fixed")],p);export{p as TopAppBarFixed};
